@@ -4,18 +4,27 @@ public class App {
     
     public static void main(String[] args) {
 
-        // Cat --> Referenztyp (Klasse aus dem das Objekt ensteht)
-        // cat1 --> Refenzvariable (Adresse des Objekts im RAM)
-
-        Cat cat1 = new Cat(); // Instanziierung >> Objekt
-        output("Blick von aussen: " + cat1); // Adresse des Objekts
+       // Objekt erzeugen + Werte zuweisen
+        Cat cat1 = new Cat("Grizabella", "white", 29);
+        output("Blick von aussen: " + cat1); 
         output("Blick von innen: " + cat1.getInstanceVar());
+
+        // Werte ausgeben
+        output(cat1.name);
+        output(cat1.furColor);
+        output(Integer.toString(cat1.age)); // Typkonvertierung
+
 
         output("--------------------");
         
-        Cat cat2 = new Cat();
+        Cat cat2 = new Cat("Alonzo", "grey", 35);
         output("Blick von aussen: " + cat2);
         output("Blick von innen: " + cat2.getInstanceVar());
+
+        // Werte ausgeben
+        output(cat2.name);
+        output(cat2.furColor);
+        output(Integer.toString(cat2.age)); // Typkonvertierung
 
     } 
 
