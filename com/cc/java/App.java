@@ -14,6 +14,8 @@ public class App {
         output(cat1.getFurColor());
         output(Integer.toString(cat1.getAge())); // Typkonvertierung
 
+        cat1.setFurColor("blue");
+        output(cat1.getFurColor());
 
         output("--------------------");
         
