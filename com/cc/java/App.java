@@ -8,13 +8,13 @@ public class App {
         // cat1 --> Refenzvariable (Adresse des Objekts im RAM)
 
         Cat cat1 = new Cat(); // Instanziierung >> Objekt
-        output("Blick von außen: " + cat1); // Adresse des Objekts
+        output("Blick von aussen: " + cat1); // Adresse des Objekts
         output("Blick von innen: " + cat1.getInstanceVar());
 
         output("--------------------");
         
         Cat cat2 = new Cat();
-        output("Blick von außen: " + cat2);
+        output("Blick von aussen: " + cat2);
         output("Blick von innen: " + cat2.getInstanceVar());
 
     } 
