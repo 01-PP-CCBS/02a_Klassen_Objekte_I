@@ -6,26 +6,28 @@ public class App {
 
        // Objekt erzeugen + Werte zuweisen
         Cat cat1 = new Cat("Grizabella", "white", 29);
-        output("Blick von aussen: " + cat1); 
+        output("Blick von außen: " + cat1); 
         output("Blick von innen: " + cat1.getInstanceVar());
 
         // Werte ausgeben
-        output(cat1.name);
-        output(cat1.furColor);
-        output(Integer.toString(cat1.age)); // Typkonvertierung
+        output(cat1.getName());
+        output(cat1.getFurColor());
+        output(Integer.toString(cat1.getAge())); // Typkonvertierung
 
 
         output("--------------------");
         
         Cat cat2 = new Cat("Alonzo", "grey", 35);
-        output("Blick von aussen: " + cat2);
+        output("Blick von außen: " + cat2);
         output("Blick von innen: " + cat2.getInstanceVar());
 
         // Werte ausgeben
-        output(cat2.name);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age)); // Typkonvertierung
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge())); // Typkonvertierung
 
+        // cat1.furColor = "gray";
+        // output(cat1.furColor)
     } 
 
     // Statische Methode, die in der Klasse ausgeführt wird ...
